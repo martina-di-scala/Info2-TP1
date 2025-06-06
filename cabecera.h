@@ -1,3 +1,6 @@
+#ifndef MI_LIB_H
+#define MI_LIB_H
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -46,3 +49,5 @@ void ordenamiento(articulos_t articulos[]);
  * @return void
  */
 void impresionFinal(articulos_t articulos[]);
+
+#endif

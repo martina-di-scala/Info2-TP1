@@ -1,10 +1,5 @@
 #include "cabecera.h"
 
-/**
- * articulos [ index, cantidad_sucursal[SUCURSAL_1], cantidad_sucursal[SUCURSAL_2], cantidad_sucursal[SUCURSAL_3], total]
- * articulos [index, descripcion]
- */
-
 int main(void)
 {
     articulos_t articulos[CANT_ARTICULOS] = {0};
