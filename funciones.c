@@ -1,6 +1,6 @@
 #include "cabecera.h"
 
-void cargarProducto(articulos_t articulos[]){
+void cargarProducto(articulos_t *articulos){
 
 int opc=0,i,articulo_index,sucursal;
 char articulo[90];
@@ -31,7 +31,7 @@ do
 
 }
 
-void impresionFichas(articulos_t articulos[]){
+void impresionFichas(articulos_t *articulos){
 int i=0;
     printf("Articulo\tSucursal 1\tSucursal 2\tSucursal 3\tTotal\n");
     while(i< CANT_ARTICULOS && articulos[i].descripcion[0]){
@@ -40,7 +40,7 @@ int i=0;
     }
 }
 
-void ordenamiento(articulos_t articulos[]){
+void ordenamiento(articulos_t *articulos){
 
 int opc=0,i,articulo_index;
 char articulo[90];
@@ -77,7 +77,7 @@ for ( opc = 1; opc < CANT_ARTICULOS; opc++)
 
 }
 
-void impresionFinal(articulos_t articulos[]){
+void impresionFinal(articulos_t *articulos){
 
     printf("\n\n###################################");
     printf("\n##############ORDENADO################");

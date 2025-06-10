@@ -24,7 +24,7 @@ typedef struct {
  * @param articulos
  * @return void
  */
-void cargarProducto(articulos_t articulos[]);
+void cargarProducto(articulos_t *articulos);
 
 /**
  * @function impresionFichas
@@ -32,7 +32,7 @@ void cargarProducto(articulos_t articulos[]);
  * @param articulos
  * @return void
  */
-void impresionFichas(articulos_t articulos[]);
+void impresionFichas(articulos_t *articulos);
 
 /**
  * @function ordenamiento
@@ -40,7 +40,7 @@ void impresionFichas(articulos_t articulos[]);
  * @param articulos
  * @return void
  */
-void ordenamiento(articulos_t articulos[]);
+void ordenamiento(articulos_t *articulos);
 
 /**
  * @function impresionFinal
@@ -48,6 +48,6 @@ void ordenamiento(articulos_t articulos[]);
  * @param articulos
  * @return void
  */
-void impresionFinal(articulos_t articulos[]);
+void impresionFinal(articulos_t *articulos);
 
 #endif
